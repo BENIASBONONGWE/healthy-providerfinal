@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homedetails.NewsActivity">
+
+  <TextView
+      android:id="@+id/titleNews"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="12dp"
+      android:layout_marginTop="12dp"
+      android:layout_marginEnd="12dp"
+      android:layout_marginBottom="12dp"
+      android:text="News and Awareness"
+      android:textColor="?attr/actionModeSplitBackground"
+      android:textSize="30sp"
+      android:textStyle="bold" />
+
+  <!-- Container for News -->
+  <RelativeLayout
+      android:id="@+id/newsContainer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/titleNews"
+      android:layout_marginTop="16dp">
+
+    <!-- News Image Holder -->
+    <ImageView
+        android:id="@+id/newsImageHolder"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:src="@drawable/health"
+        android:scaleType="centerCrop"/>
+
+    <!-- News Title -->
+    <TextView
+        android:id="@+id/newsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newsImageHolder"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="News Title"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- News Description -->
+    <TextView
+        android:id="@+id/newsDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newsTitle"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="News Description goes here. It can be a brief summary of the news."
+        android:textSize="16sp" />
+
+    <!-- Read More Button for News -->
+    <Button
+        android:id="@+id/readMoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newsDescription"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:text="Read More"
+        android:background="?attr/actionModeSplitBackground"
+        android:textColor="@color/white" />
+  </RelativeLayout>
+
+  <!-- Separation -->
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_below="@id/newsContainer"
+      android:layout_marginTop="16dp"
+      android:background="?android:attr/dividerVertical" />
+
+  <!-- Container for Awareness -->
+  <RelativeLayout
+      android:id="@+id/awarenessContainer"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/newsContainer"
+      android:layout_marginTop="16dp">
+
+    <!-- Awareness Image Holder -->
+    <ImageView
+        android:id="@+id/awarenessImageHolder"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/health"
+        android:scaleType="centerCrop"/>
+
+    <!-- Awareness Title -->
+    <TextView
+        android:id="@+id/awarenessTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/awarenessImageHolder"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Awareness Title"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Awareness Description -->
+    <TextView
+        android:id="@+id/awarenessDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/awarenessTitle"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Awareness Description goes here. It can be a brief summary of the awareness content."
+        android:textSize="16sp" />
+
+    <!-- Read More Button for Awareness -->
+    <Button
+        android:id="@+id/readMoreAwarenessButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/awarenessDescription"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:text="Read More"
+        android:background="?attr/actionModeSplitBackground"
+        android:textColor="@color/white" />
+  </RelativeLayout>
+
+</RelativeLayout>

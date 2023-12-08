@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".Homedetails.AwarenessDetailsActivity">
+
+    <ImageView
+        android:id="@+id/awarenessDetailsImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/doctor1"
+        android:contentDescription="@string/doctor_not_available" />
+
+    <TextView
+        android:id="@+id/awarenessDetailsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/awarenessDetailsImage"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:text="Sample Title"/>
+
+    <TextView
+        android:id="@+id/awarenessDetailsDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/awarenessDetailsTitle"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:textSize="18sp"
+        android:textColor="#666666"
+        android:text="Sample Description"/>
+
+</RelativeLayout>

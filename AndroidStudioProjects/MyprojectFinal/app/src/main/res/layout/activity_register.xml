@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+  <!-- Header -->
+  <TextView
+      android:id="@+id/headerTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="50dp"
+      android:text="Registration"
+      android:textSize="24sp" />
+
+  <!-- Name EditText -->
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/nameInputLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/headerTextView"
+      android:layout_marginTop="70dp">
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:hint="Name" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <!-- Email EditText -->
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/emailInputLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/nameInputLayout"
+      android:layout_marginTop="50dp">
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:hint="Email" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <!-- Password EditText -->
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/registrationPasswordInputLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/emailInputLayout"
+      android:layout_marginTop="50dp">
+
+    <EditText
+        android:id="@+id/registrationPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:hint="Password"
+        android:inputType="textPassword" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <!-- Confirm Password EditText -->
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/confirmPasswordInputLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/registrationPasswordInputLayout"
+      android:layout_marginTop="20dp">
+
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <!-- Register Button -->
+  <Button
+      android:id="@+id/registrationButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/confirmPasswordInputLayout"
+      android:layout_marginTop="40dp"
+      android:text="Register" />
+
+</RelativeLayout>

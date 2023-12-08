@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorDetails.FindDoctor">
+
+    <TextView
+        android:id="@+id/titleFindDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:drawableLeft="@drawable/baseline_health_and_safety_24"
+        android:drawableRight="@drawable/baseline_health_and_safety_24"
+        android:text="HEALTHY PROVIDER"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/titleFindDoctorsTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="MAKE YOUR HEALTHY  OUR DUTY"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bookedDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booked Date: "
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"/>
+
+
+    <TextView
+        android:id="@+id/bookedTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookedDateTextView"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:text="Booked Time: " />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:text="Our priority is to save your healthy."
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+    android:text="LOGOUT"
+    android:layout_marginTop="16dp" />
+
+</RelativeLayout>

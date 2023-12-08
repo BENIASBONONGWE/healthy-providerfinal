@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorDetails.FindDoctor">
+
+    <TextView
+        android:id="@+id/titleFindMalaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:drawableLeft="@drawable/baseline_health_and_safety_24"
+        android:drawableRight="@drawable/baseline_health_and_safety_24"
+        android:text="HEALTHY PROVIDER"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titleFindDoctorsTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="MALARIA"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!-- Container 1 -->
+    <RelativeLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleFindDoctorsTop"
+        android:layout_marginTop="16dp">
+
+        <!-- Image Holder -->
+        <ImageView
+            android:id="@+id/imageHolder"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_gravity="start"
+            android:src="@drawable/doctor1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageHolder"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/doctorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Dr. John "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select Date"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/timePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Time"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/selectDateTimeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?attr/actionModeSplitBackground"
+                android:paddingHorizontal="40dp"
+                android:paddingTop="20dp"
+                android:text="Select Date and Time"
+                android:paddingBottom="15dp"
+                android:textColor="@color/white" />
+
+            <!-- Book Doctor Button for Container 1 -->
+            <TextView
+                android:id="@+id/bookDoctorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?attr/actionModeSplitBackground"
+                android:onClick="onBookDoctorClick"
+                android:paddingHorizontal="40dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Book Doctor"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Separation -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/container1"
+        android:background="?android:attr/dividerVertical" />
+
+    <!-- Container 2 -->
+    <RelativeLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container1"
+        android:layout_marginTop="16dp">
+
+        <!-- Image Holder -->
+        <ImageView
+            android:id="@+id/imageHolder1"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_gravity="start"
+            android:src="@drawable/doctor1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageHolder1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/doctorName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Dr. Benias "
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/datePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select Date"
+
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/timePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Time"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/selectDateTimeButton11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?attr/actionModeSplitBackground"
+                android:paddingHorizontal="40dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="20dp"
+                android:text="Select Date and Time"
+                android:textColor="@color/white" />
+
+            <!-- Book Doctor Button for Container 2 -->
+            <TextView
+                android:id="@+id/bookDoctorButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?attr/actionModeSplitBackground"
+                android:onClick="onBookDoctor1Click"
+                android:paddingHorizontal="40dp"
+                android:paddingTop="20dp"
+                android:text="Book Doctor"
+                android:paddingBottom="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
